@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>QuizHeads</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar strats-->
+    <header>
+        <div class="header">
+            <h1><img src="/images/brain.png" id="head"> QUIZ-HEADS <img src="/images/brain.png" id="head"></h1>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand p-3" href="#">
+                <h3 style="color: rgb(197, 138, 11);">Quiz-Heads</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quiz Contest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Login<img src="/images/user.png" class="login"> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation bar ends-->
+    <!--Content starts-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="contentBG">
+                    <h3 style="text-decoration: underline;">Question-1</h3>
+                    <p>The prestigious Ramon Magsaysay Award was conferred was conferred upon Ms. Kiran Bedi for her
+                        excellent contribution to which of the following fields?</p>
+                    <!--Accordion-->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Options
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p id="ans">Literature</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            <p id="ans">Community Welfare</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3" value="True" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            <p id="ans">Government Service</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault4" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault4">
+                                            <p id="ans">Journalism</p>
+                                        </label>
+                                    </div>
+                                    <p id="correct" style="color: green;"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contentBG">
+                    <h3 style="text-decoration: underline;" >Question-2</h3>
+                    <p>Under an agreement with which of the following countries did Subhas Chandra Bose organize the
+                        Indian soldiers, taken as prisoners by the Axis Powers, into the Azad Hind Fauj?</p>
+                    <!--Accordion-->
+                    <div class="accordion" id="accordionExample9">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Options
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault11"
+                                            value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault11">
+                                            <p id="ans">China</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault12"
+                                            value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault12">
+                                            <p id="ans">Germany</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault13"
+                                            value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault13">
+                                            <p id="ans">Italy</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault11" id="flexRadioDefault14"
+                                            value="True" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault14">
+                                            <p id="ans">Japan</p>
+                                        </label>
+                                    </div>
+                                    <p id="correct" style="color: green;"></p>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentBG">
+                    <h3 style="text-decoration: underline;">Question-3</h3>
+                    <p>The non-permanent members of the Security Council of the UN elected by the General Assembly for
+                        two years term at present include (2-year term which begins on the January 1, 2011)</p>
+                    <!--Accordion-->
+                    <div class="accordion" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Options
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault21"
+                                            id="flexRadioDefault21" value="True" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault21">
+                                            <p id="ans">Colombia, Germany, India, Portugal, South Africa</p>
+
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault21"
+                                            id="flexRadioDefault22" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault22">
+                                            <p id="ans">Morocco, Cape, Verde, Belgium, Russia</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault21"
+                                            id="flexRadioDefault23" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault23">
+                                            <p id="ans">Zimbabwe, Venezuela, India, France</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault21"
+                                            id="flexRadioDefault24" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault24">
+                                            <p id="ans">Japan, India, Hungary, Venezuela</p>
+                                        </label>
+                                    </div>
+                                    <p id="correct" style="color: green;"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contentBG">
+                    <h3 style="text-decoration: underline;">Question-4</h3>
+                    <p>What is the name of the CalTech seismologist who invented the scale used to measure the magnitude
+                        of earthquakes?
+                    </p>
+                    <!--Accordion-->
+                    <div class="accordion" id="accordionExample4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Options
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault31"
+                                            id="flexRadioDefault31" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault31">
+                                            <p id="ans">Hiram Walker</p>
+
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault31"
+                                            id="flexRadioDefault32" value="True" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault32">
+                                            <p id="ans">Charles Richter </p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault31"
+                                            id="flexRadioDefault33" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault33">
+                                            <p id="ans">Giuseppe Mercalli</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault31"
+                                            id="flexRadioDefault34" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault34">
+                                            <p id="ans">Joshua Rumble</p>
+                                        </label>
+                                    </div>
+                                    <p id="correct" style="color: green;"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contentBG">
+                    <h3 style="text-decoration: underline;">Question-5</h3>
+                    <p>
+                        The chemical (ethyl mercaptan) added to the otherwise odourless LPG cooking gas for imparting a
+                        detectable smell
+                        to the gas is a compound of?</p>
+                    <!--Accordion-->
+                    <div class="accordion" id="accordionExample5">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Options
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault41"
+                                            id="flexRadioDefault41" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault41">
+                                            <p id="ans">bromine</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault41"
+                                            id="flexRadioDefault42" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault42">
+                                            <p id="ans">fluorine</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault41"
+                                            id="flexRadioDefault43" value="false" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault43">
+                                            <p id="ans">chlorine</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault41"
+                                            id="flexRadioDefault44" value="True" onchange="call()">
+                                        <label class="form-check-label" for="flexRadioDefault44">
+                                            <p id="ans">sulphur </p>
+                                        </label>
+                                    </div>
+                                    <p id="correct" style="color: green;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Vertically centered modal -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-primary" id="modalbt" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" onclick="score()">
+                Scores
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Your Score</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 id="score"> </h4>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+</body>
+<footer>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h1><img src="/images/brain.png" id="head">Quiz-Heads<img src="/images/brain.png" id="head"></h1>
+
+        </div>
+        <div class="col-lg-4">
+            <h2>Topics</h2>
+            <li>General Knowledge</li>
+            <li>Aptitude</li>
+            <li>Reasoning</li>
+            <li>Inventions</li>
+        </div>
+        <div class="col-lg-4">
+           <h2> Social Media</h2>
+           <div class="imgs">
+           <img src="/images/facebook.png" class="icons">
+           <img src="/images/instagram.png" class="icons">
+           <img src="/images/pinterest.png" class="icons">
+        </div>
+        </div>
+    </div>
+    </div>
+
+</footer>
+
+</html>

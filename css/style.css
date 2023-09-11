@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.93);
+    color: beige;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 0 0 30px 30px;
+}
+#head{
+    width: 50px;
+    height: auto;
+    padding-bottom: 5px;
+   
+}
+h3{
+    margin-bottom: 10px;
+    color: rgb(179, 122, 17);
+}
+ul{
+    font-size: 22px;
+    margin-left: 20px !important;
+    
+}
+p{
+    font-size: 20px !important;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: rgba(250, 247, 145, 0.787) !important;
+    margin-right: 20px;
+    border-radius: 0 50px 50px 0 ;
+}
+.navbar:hover{
+    background-color: rgba(250, 250, 84, 0.708) !important;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.216);
+    
+}
+
+.nav-link.active{
+    margin-left: 5px !important;
+    font-weight: 800 !important;
+}
+.contentBG{
+    justify-content: center;
+    background-color: rgb(222, 240, 255);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.262);
+}
+.contentBG:hover{
+    box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.402);
+    background-color:rgb(199, 224, 246);
+}
+.accordion-button{
+    text-align: center !important;
+    display: block;
+    
+    
+}
+.accordion-button:hover{
+    background: rgb(79,103,46);
+    background: linear-gradient(90deg, rgba(79,103,46,0.7399334733893557) 9%, 
+    rgba(155,241,1,0.6643032212885154) 49%,
+     rgba(80,91,51,0.8015581232492998) 100%);
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.529);
+    font-size: 18px;
+    font-weight: 700;
+}
+.form-check-input,.form-check-label{
+    margin: 10px;
+}
+.form-check-label:hover{
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    color: rgb(5, 67, 105);
+}
+.form-check-label.error{
+    color:rgb(224, 58, 58) !important;
+}
+.form-check-label.success{
+    color:rgb(109, 250, 44) !important;
+    font-weight: 700 !important;
+
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+li:hover{
+    font-weight: 500;
+}
+footer{
+    margin-top: 20px;
+    background-color:rgb(234, 205, 58);
+    border-radius: 30px 30px 0 0;
+
+}
+footer h2{
+    margin-top: 10px;
+    text-align: center;
+}
+footer h1{
+    text-align: center;
+    margin-top: 15%;
+    cursor: pointer;
+    margin-left: -10px;
+}
+footer h1:hover{
+    font-weight: 900;
+}
+.icons{
+    display: flex;
+    float: left;
+    width: 40px;
+    height: auto;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 2px;
+}
+.icons:hover{
+    width: 45px;
+    height: auto;
+}
+.imgs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+.login{
+    width: 30px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+#modalbt{
+    margin-top: 30px;
+    margin-left: 47.5%;
+}
+@media only screen and (min-width: 1200px) {
+    .imgs {
+      width:50%;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .imgs {
+      width:18%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .imgs {
+      width:26%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .imgs {
+      width:29%;
+    }
+  }
+  @media only screen and (min-width:390px) {
+    .imgs {
+      width:33%;
+    }
+  }
